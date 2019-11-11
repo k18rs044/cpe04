@@ -88,7 +88,8 @@
         ctx.beginPath();
         ctx.moveTo(x1, y1);
         ctx.lineTo(x2, y2);
-        ctx.stroke();        
+        ctx.stroke();
+       
     }    
     // 時計 clock(時, 分, 秒, 残り時間が短い時に不要な針を隠す)
     function clock(hour,minute,second,hide){
@@ -160,7 +161,8 @@
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
-        
+        $('#btnA').css('color',  'green');
+        $('#btnA').css('backgroundColor', 'yellow');
     }
 
     // Alarmの処理
@@ -196,6 +198,7 @@
         period = 60*parseInt($("#minute").val())+parseInt($("#second").val());
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間："+period);
+        $()
     }
     
  
@@ -214,7 +217,8 @@
         }
         
     } 
-
+  
+    
   </script>
 </head>
 <body>
